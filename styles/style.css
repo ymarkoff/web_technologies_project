@@ -320,6 +320,14 @@ input[type=submit] {
     color: #C81A58;
 }
 
+#register_now_container a {
+    text-decoration: none;
+}
+
+#register_now_container a:link, #register_now_container a:visited {
+    color: #C81A58;
+}
+
 @media only screen
 and (min-width: 481px) {
     /* STYLES GO HERE */
@@ -344,7 +352,7 @@ and (min-width: 481px) {
     }
 
     #desktop_menu .WideButton {
-        width: 18vw;
+        width: 20vw;
     }
 
     .CharacterImageBox {

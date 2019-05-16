@@ -205,6 +205,7 @@ actual part of the form.
 
 ##2.4.1
 This project can be found on GitHub following this
-address
+address: 
 https://github.com/ymarkoff/web_technologies_project
 
+It's also hosted on the World Wide Web: http://alter-world.online/promo
