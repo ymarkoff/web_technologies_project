@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>World Setting</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Racing+Sans+One');
+            @import url('https://fonts.googleapis.com/css?family=Rajdhani');
+
+            @import url('styles/style.css');
+        </style>
+    </head>
+    <body>
+        <div class="MenuContainer" id="mobile_menu" onclick="toggle_menu()">
+            <div class="MenuButton BlueBG">
+                <a class="MenuText Invisible" href="./setting.html">Setting</a>
+            </div>
+            <div class="MenuButton RedBG">
+                <a class="MenuText Invisible" href="./classes.html">Classes</a>
+            </div>
+            <div class="MenuButton GreenBG">
+                <a class="MenuText Invisible" href="./register.html">Registration</a>
+            </div>
+            <div id="close_button" class="Invisible" onclick="close_menu()">X</div>
+        </div>
+        <div class="MenuContainer" id="desktop_menu" onmouseleave="close_menu_desktop()">
+            <div class="MenuButton MenuButtonDesktop BlueBG" onmouseover="toggle_menu_desktop()">
+                <a class="MenuText Invisible" href="./setting.html">Setting</a>
+            </div>
+            <div class="MenuButton MenuButtonDesktop RedBG" onmouseover="toggle_menu_desktop()">
+                <a class="MenuText Invisible" href="./classes.html">Classes</a>
+            </div>
+            <div class="MenuButton MenuButtonDesktop GreenBG" onmouseover="toggle_menu_desktop()">
+                <a class="MenuText Invisible" href="./register.html">Registration</a>
+            </div>
+        </div>
+        <div class="TitleBox Green">
+            <span class="TitleFont Red">Setting</span>
+        </div>
+        <div class="TextBox IntroBox">
+            <h2>Intro</h2>
+            <p>
+                Alter World explores an Earth-based world with changes to history. The year is 2036 and Science is advanced to the point where creation of Superhumans of different classes is not only possible but a norm.
+            </p>
+            <p>
+                Despite this, the Supernatural is ever-present. The traditions of Magic, passed down for generations, are practiced by those who still believe in the Otherworld and its inhabitants.
+            </p>
+        </div>
+        <div class="TextBox">
+            <h2 class="LeftText">Story</h2>
+            <p>
+                In Japan’s Academia - a place focused on development of psychic powers in humans, students are attacked by a party known as the Shadow Riders. The victims of their attacks experience a severe psychological trauma, as well as changes to the nature of their psychis powers. As the Police is currently powerless in its efforts to track the perpetrators, no one in Academia is truly safe.
+                But what is the goal behind these viciouous attacks? Uncovering this may be the only way to stop the Shadow Riders...
+            </p>
+        </div>
+        <div class="TextBox BannerBox Mobile">
+            <img class="BannerImage" id="setting_banner_1_mobile" src="images/shadow_rider.jpg">
+        </div>
+        <div class="TextBox BannerBox Desktop">
+            <img class="BannerImage" id="setting_banner_1_desktop" src="images/shadow_rider.jpg">
+        </div>
+        <div class="TextBox RightText">
+            <span>
+                At the same time
+            </span>
+            <br>
+            <span>
+                in a different place, a different kind of darkness is stirring. A cult of an ancient and malicious deity has infiltrated the surroundings of Britannia’s College of Magic. Their purpose seems to be an artifact  hidden in the heart of the College and while their tries to get it have been prevented successfully, these cultists seem oddly sure of their eventual success. Is this just a symptom of their insanity or is some sort of a bigger plan already in motion? And what doom would their success spell for the inhabitants of Britannia - or possibly the whole world?
+            </span>
+        </div>
+        <div class="TextBox BannerBox Mobile">
+            <img class="BannerImage RotateImage" id="setting_banner_2_mobile" src="images/kyoto.jpg">
+        </div>
+        <div class="TextBox BannerBox Desktop">
+            <img class="BannerImage RotateImage" id="setting_banner_2_desktop" src="images/kyoto.jpg">
+        </div>
+
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Classes</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Racing+Sans+One');
+            @import url('https://fonts.googleapis.com/css?family=Rajdhani');
+
+            @import url('styles/style.css');
+        </style>
+    </head>
+    <body>
+        <div class="MenuContainer" id="mobile_menu" onclick="toggle_menu()">
+            <div class="MenuButton BlueBG">
+                <a class="MenuText Invisible" href="./setting.html">Setting</a>
+            </div>
+            <div class="MenuButton RedBG">
+                <a class="MenuText Invisible" href="./classes.html">Classes</a>
+            </div>
+            <div class="MenuButton GreenBG">
+                <a class="MenuText Invisible" href="./register.html">Registration</a>
+            </div>
+            <div id="close_button" class="Invisible" onclick="close_menu()">X</div>
+        </div>
+        <div class="MenuContainer" id="desktop_menu" onmouseleave="close_menu_desktop()">
+            <div class="MenuButton MenuButtonDesktop BlueBG" onmouseover="toggle_menu_desktop()">
+                <a class="MenuText Invisible" href="./setting.html">Setting</a>
+            </div>
+            <div class="MenuButton MenuButtonDesktop RedBG" onmouseover="toggle_menu_desktop()">
+                <a class="MenuText Invisible" href="./classes.html">Classes</a>
+            </div>
+            <div class="MenuButton MenuButtonDesktop GreenBG" onmouseover="toggle_menu_desktop()">
+                <a class="MenuText Invisible" href="./register.html">Registration</a>
+            </div>
+        </div>
+        <div class="TitleBox Blue">
+            <span class="TitleFont Red">Classes</span>
+        </div>
+        <div class="TextBox IntroBox">
+            <h2>Intro</h2>
+            <p>The setting of Alter World allows for a huge diversity of classes. The story begins with two base classes and more will be added with new story Arcs.</p>
+        </div>
+        <div class="TextBox BannerBox">
+            <img class="BannerImage" id="classes_banner" src="images/classes.jpg">
+        </div>
+        <div class="TextBox">
+            <h2 class="LeftText">Aberrants</h2>
+            <p>
+                Aberrants are people born with psychic powers or who have developed them through a special process. Their minds are able to bend the rules of physics and even reality to gain superpowers like Fire Manipulation, Telepathy and Telekinesis. Every Aberrant is limited to a Single Ability.
+            </p>
+        </div>
+        <p class="Examples">Examples</p>
+        <div class="TextBox AbilityBox">
+            <h2 class="LeftText">Fire Manipulation</h2>
+            <p>
+                This ability revolves around generation of fire as well as manipulating the form of existing flames.
+            </p>
+            <ul>
+                <li>
+                    <div class="SkillSquare OrangeBG"></div>
+                    <span>Fire Blast</span>
+                </li>
+                <li>
+                    <div class="SkillSquare OrangeBG"></div>
+                    <span>Ring of Fire</span>
+                </li>
+                <li>
+                    <div class="SkillSquare OrangeBG"></div>
+                    <span>Extinguish</span>
+                </li>
+            </ul>
+        </div>
+        <div class="TextBox AbilityBox">
+            <h2 class="LeftText">Telekinesis</h2>
+            <p>
+                This ability revolves around generation of an invisible force which can be used to interract with the surroundings of a person.
+            </p>
+            <ul>
+                <li>
+                    <div class="SkillSquare OrangeBG"></div>
+                    <span>Attract</span>
+                </li>
+                <li>
+                    <div class="SkillSquare OrangeBG"></div>
+                    <span>Shield</span>
+                </li>
+                <li>
+                    <div class="SkillSquare OrangeBG"></div>
+                    <span>Flight</span>
+                </li>
+            </ul>
+        </div>
+        <div class="TextBox AbilityBox">
+            <h2 class="LeftText">Teleportation</h2>
+            <p>
+                This ability revolves around generation of an invisible force which can be used to interract with the surroundings of a person.
+            </p>
+            <ul>
+                <li>
+                    <div class="SkillSquare OrangeBG"></div>
+                    <span>Blink</span>
+                </li>
+                <li>
+                    <div class="SkillSquare OrangeBG"></div>
+                    <span>Teleport Object</span>
+                </li>
+                <li>
+                    <div class="SkillSquare OrangeBG"></div>
+                    <span>Spatial Swap</span>
+                </li>
+            </ul>
+        </div>
+        <div class="TextBox">
+            <h2 class="RightText">Magicians</h2>
+            <p>
+                Magicians are people born with no innate special abilities but who have learned to harness mystical forces by performing rituals and spells linked to the power of supernatural deities. Their powers are not limited to a single element or type - but to the amount of knowledge they’ve amassed about Magic
+            </p>
+        </div>
+        <p class="Examples">Examples</p>
+        <div class="TextBox AbilityBox SpellBox RightText">
+            <h2 class="RightText">Fairy Magic</h2>
+            <p>
+                This is a rare magical school, only accessible to people who have made a contract with the Fairy folk. The spells and rituals of this school revolve around manipulation of the senses.
+            </p>
+            <ul>
+                <li>
+                    <span>Forgetfulness</span>
+                    <div class="SkillSquare SpellSquare PurpleBG"></div>
+                </li>
+                <li>
+                    <span>Cloak of Majesty</span>
+                    <div class="SkillSquare SpellSquare PurpleBG"></div>
+                </li>
+                <li>
+                    <span>Charm Person</span>
+                    <div class="SkillSquare SpellSquare PurpleBG"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="TextBox AbilityBox SpellBox RightText">
+            <h2 class="RightText">Tao Magic</h2>
+            <p>
+                A magical school is based on the principles of Taoism. The spells and rituals of this school focus on divination, protection and communion with the dead.
+            </p>
+            <ul>
+                <li>
+                    <span>Cleanse Illness</span>
+                    <div class="SkillSquare SpellSquare PurpleBG"></div>
+                </li>
+                <li>
+                    <span>Spirit Barrier</span>
+                    <div class="SkillSquare SpellSquare PurpleBG"></div>
+                </li>
+                <li>
+                    <span>Speak With The Dead</span>
+                    <div class="SkillSquare SpellSquare PurpleBG"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="TextBox AbilityBox SpellBox RightText">
+            <h2 class="RightText">Alchemy</h2>
+            <p>
+                A magical practice focused on transmutation of various materials and creation of elixirs with supernatural qualities.
+            </p>
+            <ul>
+                <li>
+                    <span>Transmute Metal</span>
+                    <div class="SkillSquare SpellSquare PurpleBG"></div>
+                </li>
+                <li>
+                    <span>Firework</span>
+                    <div class="SkillSquare SpellSquare PurpleBG"></div>
+                </li>
+                <li>
+                    <span>Create Elixir: Iron Skin</span>
+                    <div class="SkillSquare SpellSquare PurpleBG"></div>
+                </li>
+            </ul>
+        </div>
+
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>

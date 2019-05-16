@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Hello Alter World</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Racing+Sans+One');
+            @import url('https://fonts.googleapis.com/css?family=Rajdhani');
+
+            @import url('styles/style.css');
+        </style>
+    </head>
+    <body>
+        <div class="MenuContainer" id="mobile_menu" onclick="toggle_menu()">
+            <div class="MenuButton BlueBG">
+                <a class="MenuText Invisible" href="./setting.html">Setting</a>
+            </div>
+            <div class="MenuButton RedBG">
+                <a class="MenuText Invisible" href="./classes.html">Classes</a>
+            </div>
+            <div class="MenuButton GreenBG">
+                <a class="MenuText Invisible" href="./register.html">Registration</a>
+            </div>
+            <div id="close_button" class="Invisible" onclick="close_menu()">X</div>
+        </div>
+        <div class="MenuContainer" id="desktop_menu" onmouseleave="close_menu_desktop()">
+            <div class="MenuButton MenuButtonDesktop BlueBG" onmouseover="toggle_menu_desktop()">
+                <a class="MenuText Invisible" href="./setting.html">Setting</a>
+            </div>
+            <div class="MenuButton MenuButtonDesktop RedBG" onmouseover="toggle_menu_desktop()">
+                <a class="MenuText Invisible" href="./classes.html">Classes</a>
+            </div>
+            <div class="MenuButton MenuButtonDesktop GreenBG" onmouseover="toggle_menu_desktop()">
+                <a class="MenuText Invisible" href="./register.html">Registration</a>
+            </div>
+        </div>
+        <div class="TitleBox Blue">
+            <span class="TitleFont">Enter</span>
+            <br>
+            <span class="TitleFont">Alter World</span>
+        </div>
+        <div class="CharacterImageBox">
+        </div>
+        <div class="TextBox">
+            Alter World is a next-generation Online RPG Board with an Alternate Earth setting, offering endless ways to build a character and tell a story.
+        </div>
+
+        <div id="register_now_container">
+            <span>Register Now!</span>
+        </div>
+
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>
